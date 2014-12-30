@@ -6,7 +6,7 @@ group: navigation
 published: true
 ---
 
-![jefbags](//images/jefbagsavatar.jpg)
+![jefbags](//images/JefbagsAvatar.jpg)
 
 * **Name:** Jeffrey Baglioni
  * **Email:** [jefbags@gmail.com](mailto:jefbags@gmail.com)
