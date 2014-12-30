@@ -18,3 +18,5 @@ Terminal IDE - why does it say more??
 Want to insert an image!
 
 ![jefbags2](/https://raw.githubusercontent.com/jefbags/jefbags.github.io/master/images/JefbagsAvatar.jpg)
+
+![ok](/http://img.izismile.com/img/img6/20131127/640/pretty_girls_run_the_world_640_08.jpg)
