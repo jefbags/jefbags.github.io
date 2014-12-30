@@ -6,7 +6,7 @@ group: navigation
 published: true
 ---
 
-![jefbags](//images/JefbagsAvatar.jpg)
+![jefbags](/https://raw.githubusercontent.com/jefbags/jefbags.github.io/master/images/JefbagsAvatar.jpg)
 
 * **Name:** Jeffrey Baglioni
  * **Email:** [jefbags@gmail.com](mailto:jefbags@gmail.com)
