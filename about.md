@@ -6,6 +6,6 @@ group: navigation
 ---
  * **Name:** Jeffrey Baglioni
  * **Email:** [jefbags@gmail.com](mailto:jefbags@gmail.com)
- * **Github:** [Simpleyyt](https://github.com/Simpleyyt)
+ * **Github:** [jefbags](https://github.com/jefbags)
 
 Site was forked from Simpleyyt/simpleyyt.github.io - thanks Yitao Yao!
