@@ -20,7 +20,9 @@ This site was built with Jekyll.
 
 ![test3]({{ site.baseurl }}/images/jekyll-logo.png)
 
-<table border="1">
+<table border="2">
 <tr><td>hi</td><td>there</td></tr>
 <tr><td>you</td><td>?</td></tr>
 </table>
+
+ok
