@@ -17,4 +17,4 @@ Terminal IDE - why does it say more??
 
 Want to insert an image!
 
-
+![jefbags2](/https://raw.githubusercontent.com/jefbags/jefbags.github.io/master/images/JefbagsAvatar.jpg)
