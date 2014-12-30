@@ -4,7 +4,8 @@ title: About Me
 header: About Me
 group: navigation
 ---
- * **Name:** Yitao Yao
- * **Email:** [simpleyyt@gmail.com](mailto:simpleyyt@gmail.com)
- * **WeiBo:** [摇一摇SimpleLife](http://www.weibo.com/u/1836017133)
+ * **Name:** Jeffrey Baglioni
+ * **Email:** [jefbags@gmail.com](mailto:jefbags@gmail.com)
  * **Github:** [Simpleyyt](https://github.com/Simpleyyt)
+
+Site was forked from Simpleyyt/simpleyyt.github.io - thanks Yitao Yao!

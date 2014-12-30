@@ -9,26 +9,28 @@ markdown: kramdown
 
 # The title and tagline is showed on homepage
 #
-title :  Simpleyyt 
-tagline: Yitao's Blog
+title : BAGL
+tagline: jeff baglioni's Blog
 
 # Information about author
 #
 author :
-  name : Yitao Yao
+  name : Jeffrey Baglioni
   
 # Information for contacts showed at on the footer
 #
 contact :
-  e-mail : mailto:simpleyyt@gmail.com
-  Github : https://github.com/Simpleyyt
-  WeiBo : http://www.weibo.com/u/1836017133
-  Google+ : https://plus.google.com/103860633659538888207?rel=author
+  e-mail : mailto:jefbags@gmail.com
+  Github : https://github.com/jefbags
+  WeiBo : 
+  Google+ :
+  twitter: jefbags 
+  facebook: jefbags
   
 # Links showed on the footer
 #
 links :
-  Yitao's Blog : http://simpleyyt.github.io/
+  BAGL's Blog : http://jefbags.github.io/
 
 # The search engine. Only support google custom search engine.
 #
@@ -68,7 +70,7 @@ auto_loadmore : true
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://simpleyyt.github.io
+production_url : http://jefbags.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -125,17 +127,17 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : duoshuo
+    provider : disqus
     duoshuo :
-      short_name : simpleyyt
+      short_name : 
     disqus :
-      short_name : simpleyyt
+      short_name : jefbags-github
     livefyre :
-      site_id : 123
+      site_id : 
     intensedebate :
-      account : 123abc
+      account :
     facebook :
-      appid : 123
+      appid : 
       num_posts: 5
       width: 580
       colorscheme: light
