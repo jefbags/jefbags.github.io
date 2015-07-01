@@ -7,9 +7,9 @@ tags:
   - android
   - c++
   - c
-  - fucking
 published: true
 ---
+
 
 Terminal IDE - why does it say more??
 
