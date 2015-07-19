@@ -1,7 +1,7 @@
 ---
 layout: post
 category: SEC
-title: In the Land of Milk and Honeypots : part one
+title: In the Land of Milk and Honeypots, part one
 tagline: by Jeff Baglioni
 tags: 
   - security
