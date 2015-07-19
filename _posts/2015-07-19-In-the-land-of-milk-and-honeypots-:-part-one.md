@@ -2,16 +2,14 @@
 layout: post
 category: SEC
 title: In the Land of Milk and Honeypots, part one
-tagline: by Jeff Baglioni
+tagline: by jefbags
 tags: 
   - security
   - OpenWRT
   - networking
 published: true
 ---
-
-<br/>
-
+<p />
 ## Introduction
 
 Ok, hello.  The purpose of this article is document the creation of a honeypot on my home network safely, and show some of the traffic and activities that are captured and analyzed.  It might go without saying that this is a potentially dangerous thing to do, and may jeopardize my other personal devices, and also get me in trouble with my ISP.  That being understood, safety is the most important concern in this exercise.  Where applicable, active monitoring, logging and alerting will be used to ensure manage any issues.

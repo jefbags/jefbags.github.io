@@ -2,7 +2,7 @@
 layout: post
 category: NA
 title: Test Post
-tagline: by Jeff Baglioni
+tagline: by jefbags
 tags: 
   - github
   - blogging
