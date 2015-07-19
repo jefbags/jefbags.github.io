@@ -1,13 +1,12 @@
 ---
 layout: post
-category: life
+category: PR
 title: Test Post
 tagline: by Jeff Baglioni
 tags: 
   - android
   - c++
   - c
-  - fucking
 published: true
 ---
 
