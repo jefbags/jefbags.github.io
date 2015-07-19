@@ -1,9 +1,16 @@
 ---
-published: false
+layout: post
+category: SEC
+title: In the Land of Milk and Honeypots : part one
+tagline: by Jeff Baglioni
+tags: 
+  - security
+  - OpenWRT
+  - networking
+published: true
 ---
 
-
-# In the land of milk and honeypots – part 1
+<br/>
 
 ## Introduction
 
@@ -21,15 +28,15 @@ The right way to do this is to get a proper professional grade firewall and buil
 
 ## Setting up OpenWRT
 
-OpenWRT is a Linux based firmware that runs on a variety of home based, inexpensive routers.  The reason I am using it is because I can utilize a relatively cheap piece of hardware, but still get a lot of the functionality I need to get what I want.  I am also going to use it to enhance other aspects of my home internet use by using other features OpenWRT has to offer.  More information can be found at the OpenWRT _website (_ [_http://wiki.openwrt.org_](http://wiki.openwrt.org))_. __ _
+OpenWRT is a Linux based firmware that runs on a variety of home based, inexpensive routers.  The reason I am using it is because I can utilize a relatively cheap piece of hardware, but still get a lot of the functionality I need to get what I want.  I am also going to use it to enhance other aspects of my home internet use by using other features OpenWRT has to offer.  More information can be found at the OpenWRT website ([_http://wiki.openwrt.org_](http://wiki.openwrt.org)).
 
-_My existing home router does not support OpenWRT.  To find on the does, I went to Ebay.  There were many of them available.  I chose a Linksys WRT54G v3 and was able to pick it up for $4.99._
+My existing home router does not support OpenWRT.  To find on the does, I went to Ebay.  There were many of them available.  I chose a Linksys WRT54G v3 and was able to pick it up for $4.99.
 
-# INSERT PIC 1
+![pic1]({{ site.baseurl }}/images/post1/pic1.png)
 
 This is picture from Ebay.  This is literally how it looked in the box too – they didn't even unplug the power adapter when they shipped it!  I do appreciate the quality bath towel they laid it out on though.
 
-To flash the device with OpenWRT, I followed the instructions posted on the OpenWRT website ( [http://wiki.openwrt.org/toh/linksys/wrt54g](http://wiki.openwrt.org/toh/linksys/wrt54g)).  These instructions correspond to my specific device, other devices should use the appropriate corresponding instructions.
+To flash the device with OpenWRT, I followed the instructions posted on the OpenWRT website ( [_http://wiki.openwrt.org/toh/linksys/wrt54g_](http://wiki.openwrt.org/toh/linksys/wrt54g)).  These instructions correspond to my specific device, other devices should use the appropriate corresponding instructions.
 
 The installation went ok, I learned the following things along the way:
 
@@ -37,55 +44,55 @@ It was necessary to be really careful when choosing the version of OpenWRT to do
 
 I reset the device back to factory defaults using both the button on the back of the device, and also the setting within the webgui.  I am paranoid and OCD – who knows where this thing has been??
 
-# INSERT PIC 2
+![pic]({{ site.baseurl }}/images/post1/pic2.png)
 
 The firmware upgrade seemed to go ok, and I made a telnet session ok.
 
-# INSERT PIC 3
+![pic]({{ site.baseurl }}/images/post1/pic3.png)
 
 I was pretty impressed by OpenWRT CLI options.  It is a pretty advanced for something running on such a small, cheap device.  Many of the options and features are those I would have expected to see on a more advanced switch or firewall.
 
 I started by taking the OpenWRT tutorial's advice and make the device open to tftp in the event I brick it.
 
-nvram set boot\_wait=on
+	nvram set boot\_wait=on
 
-nvram set boot\_time=10
+	nvram set boot\_time=10
 
-nvram set wait\_time=10
+	nvram set wait\_time=10
 
-nvram commit && reboot
+	nvram commit && reboot
 
 Once done, I proceeded to work on upgrading to the brcm47xx version of backfire 10.03.1.
 
-# INSERT PIC 4
+![pic]({{ site.baseurl }}/images/post1/pic4.png)
 
 Held my breath a little… the Luci web interface runs really slow.  You get the feeling this little device isn't totally designed to use all this software,
 
-# INSERT PIC 5
+![pic]({{ site.baseurl }}/images/post1/pic5.png)
 
 Success!
 
-# INSERT PIC 6
+![pic]({{ site.baseurl }}/images/post1/pic6.png)
 
 ## Designing the network
 
 To setup the device, I envisioned the following, very simple network.  The purpose of the network is to isolate my DMZ, permitting only a very specific number of port and protocols between it and the internet, and the internal network.  The goal is to create the very basic network illustrated below and ensure that traffic is being appropriately isolated.
 
-# INSERT PIC 7
+![pic]({{ site.baseurl }}/images/post1/pic7.png)
 
 The only traffic between the DMZ and the internal network will be syslog from the DMZ into the internal network.  This will be to analyze data from the DMZ device.  RDP and SSH originating in the internal network is desirable in order to control the DMZ device(s) from my personal PC.  Finally, devices in the DMZ will have HTTP, HTTPS, and SMTP will be opened up to the internet.  Other ports may be opened up later as part of testing.
 
 ## Configuring the VLAN's and segregating access
 
-To set up the vlans and the firewall to control traffic at layer 3, I referred to an article on the OpenWRT website on setting up DMZ's ( [http://wiki.openwrt.org/doc/howto/dmz?s[]=dmz](http://wiki.openwrt.org/doc/howto/dmz?s%5b%5d=dmz)).
+To set up the vlans and the firewall to control traffic at layer 3, I referred to an article on the OpenWRT website on setting up DMZ's ( [_http://wiki.openwrt.org/doc/howto/dmz?s[]=dmz_](http://wiki.openwrt.org/doc/howto/dmz?s%5b%5d=dmz)).
 
 First, I had to set up the ports, and assign the DMZ port.  On the _WRT54G router, the ports are configured on the following manner:_
 
-# INSERT PIC 8
+![pic]({{ site.baseurl }}/images/post1/pic8.png)
 
 I set up an additional VLAN 2 on port 1 by adding the following to /etc/config/network.
 
-config switch\_vlan eth0\_2
+	config switch\_vlan eth0\_2
 
         option device   "eth0"
 
@@ -97,7 +104,7 @@ config switch\_vlan eth0\_2
 
 I then set up DMZ network:
 
-config 'interface' dmz
+	config 'interface' dmz
 
         option 'ifname' eth0.2 # This corresponds to "vlan2" above
 
@@ -109,7 +116,7 @@ config 'interface' dmz
 
 I then added the following rules to the firewall by configuring /etc/config/firewall.  I decided not to enable DHCP on the DMZ network.
 
-config 'zone'
+	config 'zone'
 
        option 'name' 'dmz'
 
@@ -121,9 +128,9 @@ config 'zone'
 
        option 'network' 'dmz'
 
-# Allow the DMZ to use the router as a DNS server
+	# Allow the DMZ to use the router as a DNS server
 
-config 'rule'
+	config 'rule'
 
        option 'src' 'dmz'
 
@@ -133,47 +140,49 @@ config 'rule'
 
        option 'target' 'ACCEPT'
 
-# Allow the DMZ to use the router as a DHCP server
+	# Allow the DMZ to use the router as a DHCP server
 
-#NOT ENABLING
+	#NOT ENABLING
 
-#config 'rule'
+	#config 'rule'
 
-\#       option 'src' 'dmz'
+	#       option 'src' 'dmz'
 
-\#       option 'proto' 'udp'
+	#       option 'proto' 'udp'
 
-\#       option 'dest\_port' '67'
+	#       option 'dest\_port' '67'
 
-\#       option 'target' 'ACCEPT'
+	#       option 'target' 'ACCEPT'
 
 \*I chose not to enable a DHCP server on the DMZ network, but did so for the internal VLAN at this time.
 
-# Allow the DMZ to access the Internet
+	# Allow the DMZ to access the Internet
 
-config 'forwarding'
+	config 'forwarding'
 
        option 'src' 'dmz'
 
        option 'dest' 'wan'
 
-# Allow the LAN to access the DMZ
+	# Allow the LAN to access the DMZ
 
-config 'forwarding'
+	config 'forwarding'
 
        option 'src' 'lan'
 
-       option 'dest' 'dmz'
+       option 'dest' 'dmz'	
+
+<br />
 
 ## Issue with wireless
 
 I had an issue getting wireless to work.  The AP would not broadcast and I could not get the wireless interface to become enabled.  I was getting the following error message:  "Wireless is disabled or not associated".  I reviewed the file /etc/config/wireless and noted that the "option type" under the wifi device was set to "Broadcom".  A little research showed that this configuration was a holdover from the brcm-2.4 kernel, however as noted above this was upgraded to bcm47xx.  I was a little concerned about the packages that would be needed to fix this, but as it turns out a resolution was really simple (thanks linuxb - [https://forum.openwrt.org/viewtopic.php?id=22311&p=14](https://forum.openwrt.org/viewtopic.php?id=22311&p=14)):
 
-rm /etc/config/wireless; wifi detect > /etc/config/wireless
+	rm /etc/config/wireless; wifi detect > /etc/config/wireless
 
 That resolved the issue and enabled the wireless radio and set up the config file in the following generic way:
 
-# INSERT PIC 9
+![pic]({{ site.baseurl }}/images/post1/pic9.png)
 
 To complete the remaining wireless configuration, I used the tutorial on the OpenWRT website ( [http://wiki.openwrt.org/doc/uci/wireless](http://wiki.openwrt.org/doc/uci/wireless)).
 
@@ -181,6 +190,3 @@ To complete the remaining wireless configuration, I used the tutorial on the Ope
 
 OK – that's it for this entry!  Next time we'll work on setting up some NAT's and opening up some choice ports.  After that, onto server configuration and then the real fun begins!
 
-
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
