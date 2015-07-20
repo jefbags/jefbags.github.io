@@ -10,7 +10,7 @@ markdown: kramdown
 # The title and tagline is showed on homepage
 #
 title : BAGL
-tagline: jeff baglioni's blog
+tagline: blog
 
 # Information about author
 #
@@ -20,11 +20,10 @@ author :
 # Information for contacts showed at on the footer
 #
 contact :
-  e-mail : mailto:jefbags@gmail.com
+  e-mail : mailto:jeff@bagl.io
   Github : https://github.com/jefbags
-  Google+ :
-  twitter: jefbags 
-  facebook: jefbags
+  Google+ : https://plus.google.com/116660671302596830805
+  twitter: http://twitter.com/jefbags 
   
 # Links showed on the footer
 #
