@@ -10,6 +10,7 @@ tags:
 published: false
 ---
 
+
 <p />
 ## Setting the stage...
 
@@ -34,6 +35,14 @@ Dd
 # 4.  Set up tcpdump (POC)
 
 # 5.  s
+
+-	Set up Honeypot server
+-	Logging/Monitoring/Alerting on specific actions and intrusions
+-	Database of origins of actions
+-	Experiment with scanning attackers back
+
+
+
  
 
 
