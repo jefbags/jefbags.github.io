@@ -6,15 +6,13 @@ group: navigation
 published: true
 ---
 
-![jefbags](//images/JefbagsAvatar.jpg)
-
 * **Name:** Jeffrey Baglioni
- * **Email:** [jefbags@gmail.com](mailto:jefbags@gmail.com)
+ * **Email:** [jeff@bagl.io](mailto:jeff@bagl.io)
  * **Github:** [jefbags](https://github.com/jefbags)
 
 Site was forked from [Simpleyyt](Simpleyyt/simpleyyt.github.io "Simpleyyt") - thanks Yitao Yao!
 
-why???
+
 
 ![test3]({{ site.baseurl }}/images/JefbagsAvatar.jpg)
 
