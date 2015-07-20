@@ -24,10 +24,16 @@ As noted in my previous entry, the purpose of this series of posts is to documen
 
 I wanted to be able to access my test device out on the DMZ network.  To do this, I set up a rule opening up port 5900 to the LAN.
 
-#Open up ports to WAN
+# 1.  Open up ports to LAN/WAN
 Dd
 
-#Set up server
+# 2.  Set up virtual server
+
+# 3.  Set up honeypot server
+
+# 4.  Set up tcpdump (POC)
+
+# 5.  s
  
 
 
