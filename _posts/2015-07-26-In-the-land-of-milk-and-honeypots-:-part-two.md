@@ -7,7 +7,7 @@ tags:
   - security
   - OpenWRT
   - networking
-published: false
+published: true
 ---
 
 
@@ -60,7 +60,7 @@ Next I need to lock the router down.  There are several standard steps that will
 
 
 
-![pic1]({{ site.baseurl }}/images/post1/pic1.png)
+![pic]({{ site.baseurl }}/images/post2/pic1.png)
 
 I wanted to be able to access my test device out on the DMZ network.  To do this, I set up a rule opening up port 5900 to the LAN.
 
@@ -71,9 +71,9 @@ Dd
 
 # 3.  Set up honeypot server
 
-# 4.  Set up tcpdump (POC)
 
-# 5.  s
+
+
 
 -	Set up Honeypot server
 -	Logging/Monitoring/Alerting on specific actions and intrusions
