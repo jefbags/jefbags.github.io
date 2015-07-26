@@ -100,8 +100,28 @@ I also ended up creating a second rule similar to this specifically for ICMP.  A
 
 ![pic]({{ site.baseurl }}/images/post2/pic4.png)
 
-OK, so how do I know this is working?  I can use tcpdump, which I installed earlier.  
+OK, so how do I know this is working?  I can use tcpdump, which I installed earlier.  I can ping the test device I have out on the DMZ.  If I look at the LAN interface, I can see the address of my laptop, 192.168.1.13:
 
+![pic]({{ site.baseurl }}/images/post2/pic6.png)
+
+But, if I look on the DMZ interface, I can confirm that the source IP address has changed to the intended new source of 172.16.21.201l.
+
+![pic]({{ site.baseurl }}/images/post2/pic7.png)
+
+##  Opening up ports on the DMZ to the WAN
+
+Eventually, we'll want to open up ports on the DMZ to the internet.  Once that happens, any services we have runnnig on the open ports will be exposed.  That's fine though, it's the reason this is all being set up!  
+
+To configure the open ports, I will do something like the below configurations:
+
+	config redirect
+        option src       wan
+        option src_dport 80
+        option proto     tcp
+        option dest      dmz
+        option dest_ip   172.16.21.2
+        
+        
 
 > test
 
@@ -113,16 +133,10 @@ OK, so how do I know this is working?  I can use tcpdump, which I installed earl
 
 
 
-
-
-![pic]({{ site.baseurl }}/images/post2/pic1.png)
-
-I wanted to be able to access my test device out on the DMZ network.  To do this, I set up a rule opening up port 5900 to the LAN.
-
  
 
 
 
 ## Conclusion
 
-Well, I do feel more secure now.
+Well, I do feel more secure now.  This has been a lot of stuff.  Next time, I'll test and see how things work before moving on and setting up the server.
