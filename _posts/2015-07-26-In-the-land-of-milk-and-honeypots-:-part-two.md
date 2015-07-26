@@ -7,14 +7,15 @@ tags:
   - security
   - OpenWRT
   - networking
-published: true
+published: false
 ---
 
 
 
 
+
 <p />
-## Setting the stage...
+## Hardening the OpenWRT device...
 
 As noted in my previous entry, the purpose of this series of posts is to document the creation of a honeypot, and the use of tools and techniques to analyze activity.  In this post, I will continue configuring the OpenWRT router, lock down some of the settings, and also set up some NAT's and open ports.
 
@@ -40,14 +41,15 @@ To test that the tool is installed ok, I'll monitor the LAN interface for ICMP t
 
 	tcpdump -i br-lan icmp
 
-Ok, seems to be up and running!  REbooted a few times, and retested.  We are set to move on.
+Ok, seems to be up and running!  Rebooted a few times, and retested.  There were a couple of hiccups, and the wrong dump will easily overwhelm the device.  But generally, we are set to move on.
 
 ![pic]({{ site.baseurl }}/images/post2/pic2.png)
 
-## Hardening the OpenWRT device
+## Setting up public key authentication
 
-Next I need to lock the router down.  There are several standard steps that will be taken.  Mostly, I following along with the items noted on the OpenWRT website where an excellent tutorial exists ([http://wiki.openwrt.org/doc/howto/secure.access](http://wiki.openwrt.org/doc/howto/secure.access)).
+Next I need to start and lock the router down.  There are several standard steps that will be taken.  Mostly, I following along with the items noted on the OpenWRT website where an excellent tutorial exists ([http://wiki.openwrt.org/doc/howto/secure.access](http://wiki.openwrt.org/doc/howto/secure.access)).
 
+I want to start by setting up keys that need to be present in order to SSH to the router.  
 
 
 > test
