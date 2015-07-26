@@ -17,6 +17,7 @@ published: false
 ## Setting the stage...
 
 As noted in my previous entry, the purpose of this series of posts is to document the creation of a honeypot, and the use of tools and techniques to analyze activity.  In this post, I will continue configuring the OpenWRT router, lock down some of the settings, and also set up some NAT's and open ports.
+
 <!--more-->
 
 ## Installing tcpdump
