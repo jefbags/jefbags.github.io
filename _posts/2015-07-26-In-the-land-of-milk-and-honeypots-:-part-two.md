@@ -108,7 +108,7 @@ But, if I look on the DMZ interface, I can confirm that the source IP address ha
 
 ![pic]({{ site.baseurl }}/images/post2/pic7.png)
 
-##  Opening up ports on the DMZ to the WAN
+##  Opening up DNAT on the DMZ to the WAN
 
 Eventually, we'll want to open up ports on the DMZ to the internet.  Once that happens, any services we have runnnig on the open ports will be exposed.  That's fine though, it's the reason this is all being set up!  
 
@@ -121,20 +121,7 @@ To configure the open ports, I will do something like the below configurations:
         option dest      dmz
         option dest_ip   172.16.21.2
         
-        
-
-> test
-
-
-	test2
-    test2
-
-
-
-
-
- 
-
+172.16.21.2 will be the static address of the server once it gets set up.  For now, we'll leave this redirect rule commented out in the configuration.  I will also need an access rule that permits the traffic, but I think I will come back to it as we get the server hardened and get into the testing.
 
 
 ## Conclusion
