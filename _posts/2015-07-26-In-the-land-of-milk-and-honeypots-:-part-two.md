@@ -35,7 +35,7 @@ Then install the package
 
 Ok, so that was slow.  This router is struggling.  Will probably look into upgrading later on.  There is barely enough memory or space on this thing to do a lot.
 
-![pic]({{ site.baseurl }}/images/post2/pic3.png)
+![pic]({{ site.baseurl }}/images/post2/Pic1.png)
 
 To test that the tool is installed ok, I'll monitor the LAN interface for ICMP traffic, and ping it:
 
@@ -43,7 +43,7 @@ To test that the tool is installed ok, I'll monitor the LAN interface for ICMP t
 
 Ok, seems to be up and running!  Rebooted a few times, and retested.  There were a couple of hiccups, and the wrong dump will easily overwhelm the device.  But generally, we are set to move on.
 
-![pic]({{ site.baseurl }}/images/post2/pic2.png)
+![pic]({{ site.baseurl }}/images/post2/Pic2.png)
 
 ## Setting up public key authentication
 
@@ -51,7 +51,7 @@ Next I need to start and lock the router down.  There are several standard steps
 
 I want to start by setting up keys that need to be present in order to SSH to the router.  I generated a key pair on my laptop using OpenSSH, and copied the public one onto the router.  I then successfully configured the router to utilize the keys in place of the id and password.
 
-![pic]({{ site.baseurl }}/images/post2/pic1.png)
+![pic]({{ site.baseurl }}/images/post2/pic3.png)
 
 I also tested from my Windows machine using Putty.  To do this, it was necessary to use the PuTTYgen tool.  I imported my exiting SSH key into this tool, and then saved it as a .PPK file.  I also am using the Pageant program to save the passphrase so I don't have to enter it everytime I log into the router.  I then disabled password auth for login:
 
