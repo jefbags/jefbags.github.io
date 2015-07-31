@@ -7,7 +7,7 @@ tags:
   - security
   - OpenWRT
   - networking
-published: false
+published: true
 ---
 
 
