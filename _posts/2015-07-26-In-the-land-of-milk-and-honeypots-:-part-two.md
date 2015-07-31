@@ -81,20 +81,21 @@ I could not login with my new user account because the key was not present in th
 
 Finally, I tried to limit access to the web interface from http and only allow https.  However I ran out of space, so that didn't work.  I'll revisit that one at some point and do something, maybe tunneling via SSH.
 
-## Setting up the Source NAT from the LAN to the DMX
+## Setting up the Source NAT from the LAN to the DMZ
 
 Now I want to ensure that when any traffic goes from the LAN to the DMZ, it gets natted to an address on the DMZ network.  We don't have to worry about configuring an access rule for this, because noted in the last post, we are allowing all traffic from the LAN to the DMZ.  
 
 To set up the natting, we need to configure a redirect on the router.  I tried by editing /etc/config/firewall directly.  Had some issues, here's what I settled and got to work fine:
+
 	config 'redirect'
-        option '_name' 'Source NAT from LAN to DMZ'
-        option 'src' 'lan'
-        option 'proto' 'tcpudp'
-        option 'dest_ip' '172.16.21.0/24'
-        option 'target' 'SNAT'
-        option 'dest' 'dmz'
-        option 'src_dip' '172.16.21.201'
-        option 'src_ip' '192.168.1.0/24'
+	option '_name' 'Source NAT from LAN to DMZ'
+	option 'src' 'lan'
+	option 'proto' 'tcpudp'
+	option 'dest_ip' '172.16.21.0/24'
+	option 'target' 'SNAT'
+	option 'dest' 'dmz'
+	option 'src_dip' '172.16.21.201'
+	option 'src_ip' '192.168.1.0/24'
 
 I also ended up creating a second rule similar to this specifically for ICMP.  At this time, I don't know how to include both TCP-UDP and ICMP in the same rule and have it actually work.  I'm sure there's syntax that eludes me, but this will work for now.  This is what they end up looking like in the web GUI.
 
