@@ -99,7 +99,7 @@ To set up the natting, we need to configure a redirect on the router.  I tried b
 
 I also ended up creating a second rule similar to this specifically for ICMP.  At this time, I don't know how to include both TCP-UDP and ICMP in the same rule and have it actually work.  I'm sure there's syntax that eludes me, but this will work for now.  This is what they end up looking like in the web GUI.
 
-![pic]({{ site.baseurl }}/images/post2/pic4.png)
+![pic]({{ site.baseurl }}/images/post2/pic5.png)
 
 OK, so how do I know this is working?  I can use tcpdump, which I installed earlier.  I can ping the test device I have out on the DMZ.  If I look at the LAN interface, I can see the address of my laptop, 192.168.1.13:
 
