@@ -68,7 +68,7 @@ I also took the last piece of advice from the tutorial, and completely disabled 
 
 	rm /etc/init.d/telnet
 
-Finally, I changed the port that SSH listens on to something completely random.
+Finally, I changed the port that SSH listens on to something completely random and also bound it to the LAN interface only.
 
 ## Account Management
 
