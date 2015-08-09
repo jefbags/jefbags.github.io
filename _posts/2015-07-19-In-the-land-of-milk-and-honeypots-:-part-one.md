@@ -54,11 +54,11 @@ I was pretty impressed by OpenWRT CLI options.  It is a pretty advanced for some
 
 I started by taking the OpenWRT tutorial's advice and make the device open to tftp in the event I brick it.
 
-	nvram set boot\_wait=on
+	nvram set boot_wait=on
 
-	nvram set boot\_time=10
+	nvram set boot_time=10
 
-	nvram set wait\_time=10
+	nvram set wait_time=10
 
 	nvram commit && reboot
 
@@ -92,7 +92,7 @@ First, I had to set up the ports, and assign the DMZ port.  On the _WRT54G route
 
 I set up an additional VLAN 2 on port 1 by adding the following to /etc/config/network.
 
-	config switch\_vlan eth0\_2
+	config switch_vlan eth0_2
 
         option device   "eth0"
 
@@ -136,7 +136,7 @@ I then added the following rules to the firewall by configuring /etc/config/fire
 
        option 'proto' 'tcpudp'
 
-       option 'dest\_port' '53'
+       option 'dest_port' '53'
 
        option 'target' 'ACCEPT'
 
@@ -150,7 +150,7 @@ I then added the following rules to the firewall by configuring /etc/config/fire
 
 	#       option 'proto' 'udp'
 
-	#       option 'dest\_port' '67'
+	#       option 'dest_port' '67'
 
 	#       option 'target' 'ACCEPT'
 

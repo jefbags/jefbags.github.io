@@ -7,7 +7,7 @@ tags:
   - security
   - Linux
   - Virtualbox
-published: false
+published: true
 ---
 
 
@@ -16,8 +16,9 @@ published: false
 
 <p />
 ## Let's set up the server...
+<img align="right" src="{{ site.baseurl }}/images/linux.png">
 
-As noted in my previous entry, the purpose of this series of posts is to document the creation of a honeypot, and the use of tools and techniques to analyze activity.  In this post, I will continue configuring the OpenWRT router, lock down some of the settings, and also set up some NAT's and open ports.
+As noted in my previous entries, I have been messing around with a bunch of technologies in order to document the creation of a honeypot server and environs, and the use of tools and techniques to analyze activity.  In this post, I will set up the base of the server environment.  
 
 <!--more-->
 
@@ -37,11 +38,7 @@ https://forums.virtualbox.org/viewtopic.php?f=7&t=67128
 
 
 
-![pic]({{ site.baseurl }}/images/post2/pic7.png)
-
 
 
 
 ## Conclusion
-
-
