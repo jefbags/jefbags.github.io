@@ -90,9 +90,11 @@ If a manager can help provide answers to all of these questions, then it's possi
 
 
 ## Conclusion
-It’s easy to think there’s a silver bullet to figuring out how to get the best from ourselves and our teams.  Do I think that these questions reflect some amount of truth?  Sure.  But I also think the devil is in the details.  I also think it's possible to answer many of these questions affirmatively in some degree or another, and think everything is fine.  Subjectivity could easily get in the way of being honest and focussing on the rights things.   
+It’s easy to think there’s a silver bullet to figuring out how to get the best from ourselves and our teams.  Do I think that these questions reflect some amount of truth?  Sure, absolutely.  But I also think the devil is in the details.  I also think it's possible to answer many of these questions affirmatively in some degree or another, and think everything is fine.  Subjectivity could easily get in the way of being honest and focussing on the rights things.   
 
-The authors got out of their way to point out that most companies tend to focus on the top level, without adequately satisfying the lower levels.
+In addition to the questions, there are two things that will stay with me.
+
+First, the authors got out of their way to point out that most companies tend to focus on the top level, without adequately satisfying the lower levels.  I think the a quote from the book expresses it best.
 
 > Inexperienced climbers might suggest that if you have lots of money and not much time, you could helicopter into Camp 3 and race to the summit. Experienced guides know that you would never make it. Mountain sickness would sap your energy and slow your progress to a crawl. These guides will tell you that to reach the summit you have to pay your dues. During your ascent you have to spend a great deal of time between Base Camp and Camp 1. The more time you spend at these lower reaches, the more stamina you will have in the thin air near the summit.
 <img align="left" src="{{ site.baseurl }}/images/post3/pic4.png">  
