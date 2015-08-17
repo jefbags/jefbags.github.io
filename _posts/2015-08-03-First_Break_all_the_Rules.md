@@ -92,13 +92,15 @@ If a manager can help provide answers to all of these questions, then it's possi
 ## Conclusion
 It’s easy to think there’s a silver bullet to figuring out how to get the best from ourselves and our teams.  Do I think that these questions reflect some amount of truth?  Sure, absolutely.  But I also think the devil is in the details.  I also think it's possible to answer many of these questions affirmatively in some degree or another, and think everything is fine.  Subjectivity could easily get in the way of being honest and focussing on the rights things.   
 
-In addition to the questions, there are two things that will stay with me.
+I found this to be a great book and one I recommended for managers and staff alike.  In addition to the questions above, There are two things that will stay with me.
 
-First, the authors got out of their way to point out that most companies tend to focus on the top level, without adequately satisfying the lower levels.  I think the a quote from the book expresses it best.
+Frist, the authors indicate many times over in the book that it is an employee's direct manager that has the single greatest impact over the success of the individual and the team.  It is important to keep this in mind as we develop our teams and move our organizations forward.  More than perks, benefits, and even salary to some degree, the highest levels of performance come from those who are most enagaged with their teams and their mission.   
+
+Second, the authors got out of their way to point out that most companies tend to focus on the top level, without adequately satisfying the lower levels.   I think the a quote from the book expresses it best.
 
 > Inexperienced climbers might suggest that if you have lots of money and not much time, you could helicopter into Camp 3 and race to the summit. Experienced guides know that you would never make it. Mountain sickness would sap your energy and slow your progress to a crawl. These guides will tell you that to reach the summit you have to pay your dues. During your ascent you have to spend a great deal of time between Base Camp and Camp 1. The more time you spend at these lower reaches, the more stamina you will have in the thin air near the summit.
 <img align="left" src="{{ site.baseurl }}/images/post3/pic4.png">  
 It almost sounds obvious. But over the last fifteen years most man agers have been encouraged to focus much higher up the mountain. Mission statements, diversity training, self-directed work teams—all try to help employees feel they belong (Camp 2). Total quality management, re-engineering, continuous improvement, learning organizations—all address the need for employees to innovate, to challenge cozy assumptions and rebuild them a fresh, every day (Camp 3). All of these initiatives were very well conceived. Many of them were well executed. But almost all of them have withered.
 
-### One final thought
-The authors indicate many times over in the book that it is an employee's direct manager that has the single greatest impact over the success of the individual and the team.  It is important to keep this in mind as we develop our teams and move our organizations forward.
+As with so many other aspects of life, fundamentals are key.
+
