@@ -68,7 +68,7 @@ The ascension to Camp 1 is a shift in maturity from inward to outward where ther
 5. Does my supervisor, or someone at work, seem to care about me as a person?
 6. Is there someone at work who encourages my development?
 
-Here, the focus is on leadership, and professional mastery.  The employee has the opportunity to not only do his job, but create new opportunities and ways of doing things for herself.
+Here, the focus is on leadership, and professional mastery.  The employee has the opportunity to not only do his job, but create new opportunities and ways of doing things for herself and the group. 
 
 ### Level 3 - “Camp 2“, aka Do I belong here?
 At Camp 2, the focus shifts from day-to-day performance towards personal and group integration.  The questions below get at how well in-tune the players are with each other, and with the direction and mission of the organization:
@@ -80,7 +80,7 @@ At Camp 2, the focus shifts from day-to-day performance towards personal and gro
 11. In the last six months, has someone at work talked to me about my progress?
 12. This last year, have I had opportunities at work to learn and grow?
 
-Out basically, is the group a team, and is everyone in sync with each other and where things are going?
+Or basically, is the group a team, and is everyone in sync with each other and where things are going?
 
 ### The Summit
 If a manager can help provide answers to all of these questions, then it's possible to reach what the authors call the summit.  An excerpt from the book defines what that means exactly:
