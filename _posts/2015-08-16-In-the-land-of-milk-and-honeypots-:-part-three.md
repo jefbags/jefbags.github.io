@@ -7,7 +7,7 @@ tags:
   - security
   - Linux
   - Ubuntu
-published: false
+published: true
 ---
 
 
