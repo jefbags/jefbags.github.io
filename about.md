@@ -6,7 +6,7 @@ group: navigation
 published: true
 ---
 
-* **Name:** Jeffrey Baglioni
+* **Name:** jefbags
  * **Email:** [jeff@bagl.io](mailto:jeff@bagl.io)
  * **Github:** [jefbags](https://github.com/jefbags)
 
