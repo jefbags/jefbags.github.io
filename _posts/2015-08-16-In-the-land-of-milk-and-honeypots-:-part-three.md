@@ -16,6 +16,7 @@ published: false
 
 
 
+
 <p />
 ## Let's set up the server...
 <img align="right" src="{{ site.baseurl }}/images/linux.png">
@@ -29,14 +30,17 @@ The thing that is being reenforced as I move through this project is the ease an
 
 Case in point, for this project I needed a separate, stand-alone device to throw to the wolves.  And, as previously documented, I am not interested in spending too much on this project.  But I know I need something with a little power behind it, otherwise what's the point?  Toward that end, I toook this old computer that was in my basement, and designated it my DMZ device:
 
-![pic]({{ site.baseurl }}/images/post4/Pic1.png)
+![pic]({{ site.baseurl }}/images/post4/pic2.png)
+
+I yanked a bunch of pieces out of it, and put them in a box, like so... and I replaces them with newer, cooler faster parts.
+
+![pic]({{ site.baseurl }}/images/post4/pic3.png)
 
 
-I 
 
 ## Setting up the host server
 
-First 
+For the OS, I decided to go with Ubuntu server.  I looked into 
 
 
 
