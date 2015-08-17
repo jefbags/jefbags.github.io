@@ -32,31 +32,30 @@ Case in point, for this project I needed a separate, stand-alone device to throw
 
 ![pic]({{ site.baseurl }}/images/post4/pic2.png)
 
-I yanked a bunch of pieces out of it, and put them in a box, like so... and I replaces them with newer, cooler faster parts.
+I yanked a bunch of critical pieces out of it, and put them in a box, like so... and then I replaces them with newer, cooler faster critical pieces.
 
 ![pic]({{ site.baseurl }}/images/post4/pic3.png)
 
+And when's all said and done, I now have a more or less modern and beefy machine for some pretty short money.  
 
+PIC
+
+How many cores is that?  That's right, it's 8 bitches.  I am hoping that helps with processing on the virtual machines, along with enough RAM to make it look like I am trying to overcompensate for personal shortcomings. 
 
 ## Setting up the host server
+For the OS, I decided to go with Ubuntu server.  I looked into Windows and a bunch of distro's but I really like Ubuntu.  It's powerful, yet friendly.  Even the error messages are pleasant and helpful.
 
-For the OS, I decided to go with Ubuntu server.  I looked into 
+PIC 
 
+For packages and software, I kept it very simple. No GUI, no extra packages, no servers, limited services etc.  Actually, during the installation, when it asked me what I wanted to install, I only chose the SSH server, and host virtualization tools.  I'll get into configuring them a little later.  I also want to harden the device, even more than the guest VM's, because this has got to last for the ages, while I imagine that the guests will be getting reset on a fairly regular basis.
 
+### SSH keys
 
-LINKS I FOUND!!!
+### Other Hardening Stuff
 
-https://www.virtualbox.org/wiki/Linux_Downloads
-
-http://www.itworld.com/article/2696773/install-virtualbox-4-3-14-in-linux-mint-17.html
-
-https://forums.virtualbox.org/viewtopic.php?f=7&t=67128
-
-
-
-
-
-
+### Virtually a server
 
 
 ## Conclusion
+
+
