@@ -17,6 +17,7 @@ published: false
 
 
 
+
 <p />
 ## Let's set up the server...
 <img align="right" src="{{ site.baseurl }}/images/linux.png">
@@ -50,12 +51,13 @@ PIC
 For packages and software, I kept it very simple. No GUI, no extra packages, no servers, limited services etc.  Actually, during the installation, when it asked me what I wanted to install, I only chose the SSH server, and host virtualization tools.  I'll get into configuring them a little later.  I also want to harden the device, even more than the guest VM's, because this has got to last for the ages, while I imagine that the guests will be getting reset on a fairly regular basis.
 
 ### SSH keys
+As with the router, will route most of the traffic through ssh, and secure authentication via keys.  I generated my keys elsewere and copied them onto the server using this nifty command:
 
+	ssh-copy-id username@ip_address
+    
 ### Other Hardening Stuff
 
 ### Virtually a server
 
 
 ## Conclusion
-
-
