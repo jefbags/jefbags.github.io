@@ -41,7 +41,7 @@ And when's all said and done, I now have a more or less modern and beefy machine
 
 ![pic]({{ site.baseurl }}/images/post4/pic4.png)
 
-How many cores is that? That's right, it's **8 bitches**. I am hoping that helps with processing on the virtual machines, along with enough RAM to make it look like I am trying to overcompensate for personal shortcomings. 
+How many cores is that? That's right, it's 8 bitches! I am hoping that helps with processing on the virtual machines, along with enough RAM to make it look like I am trying to overcompensate for personal shortcomings. 
 
 ## Setting up the host server
 For the OS, I decided to go with Ubuntu server. I looked into Windows and a bunch of distro's but I really like Ubuntu. It's powerful, yet friendly. Even the error messages are pleasant and helpful.  Why yes, thank you Ubuntu I think I will install that program.
