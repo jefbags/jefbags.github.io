@@ -61,7 +61,7 @@ I also added the following to sshd.config
 
 I limited access via ssh on my new port with a quick rule using ufw:
 
-	sudo ufw allow from 172.16.21.201 to any port 4345
+	sudo ufw allow from 172.16.21.201 to any port xxxx
  
 ### Other Hardening Stuff
 I followed many of the instructions in this pretty good guide: ( [_http://hardenubuntu.com/_](http://hardenubuntu.com/)), as well as sources, noted below. Among some of things that were done:
