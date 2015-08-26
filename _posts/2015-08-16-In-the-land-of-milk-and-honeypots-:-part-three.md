@@ -64,10 +64,11 @@ I limited access via ssh on my new port with a quick rule using ufw:
 	sudo ufw allow from 172.16.21.201 to any port xxxx
  
 ### Other Hardening Stuff
-I followed many of the instructions in this pretty good guide: ( [_http://hardenubuntu.com/_](http://hardenubuntu.com/)), as well as sources, noted below. Among some of things that were done:
+I mainly followed the instructions in this pretty good guide: ( [http://hardenubuntu.com/](http://hardenubuntu.com/)), however I also referred to other sources, including the SANS guide ([http://www.sans.org/media/score/checklists/linuxchecklist.pdf](http://www.sans.org/media/score/checklists/linuxchecklist.pdf)) and NIST checklist ([https://www.nsa.gov/ia/_files/os/redhat/NSA_RHEL_5_GUIDE_v4.2.pdf](https://www.nsa.gov/ia/_files/os/redhat/NSA_RHEL_5_GUIDE_v4.2.pdf)) which were both slightly less applicable but still really good to look at. Among some of things that were done:
 
 * disabled the root account
 	sudo passwd -l root
+* changed password policy
 * disabled ipv6 for now
 * upgraded openssl
 * secured shared memory
