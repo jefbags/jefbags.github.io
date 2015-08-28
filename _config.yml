@@ -39,7 +39,7 @@ search :
   
   # Your Google custom search engine ID
   #
-  gcse :
+  gcse : document.createElement('script')
     cx : 004734201689686315595:fqfgzmucnpc
   
 # The way of excerpt. There are two options: "teaser" and "truncate_words".
