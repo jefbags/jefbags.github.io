@@ -80,7 +80,7 @@ I mainly followed the instructions in this pretty good guide: ( [http://hardenub
 * set alerts on login attempts
 * installed and configured fail2ban
 * installed and configured PSAD Intrusion Detection
-* installed and configured the UFW (Uncomplicated Firewall), with 
+* installed and configured the UFW (Uncomplicated Firewall)
 * set configurations to prevent IP Spoofing attacks
 * set configurations to prevent Ping Floods
 
@@ -203,7 +203,7 @@ Drop all NULL packets
 
 As mentioned above, changes made manually to the IPTables config need to be saved using the command:
 
-	iptables-save > /pathname
+	sudo iptables-save > /pathname
 
 
 ## Conclusion
