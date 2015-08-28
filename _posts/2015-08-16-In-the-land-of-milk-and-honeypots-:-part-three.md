@@ -27,7 +27,7 @@ As noted in my previous entries, I have been messing around with and documenting
 <!--more-->
 
 ## Cheap chips
-The thing that is being reenforced as I move through this project is the ease and accessibility of the technology and software needed to complete it. While Thomas Friedman might have proclaimed that the world is flat in his book a few years back, in no other place than information technology is the more evident and apparent. There is so much readily availble electronics, and open source software, anyone can have in their hands almost immediately the tools they need. Can you think of any other profession or hobby that is so instantaneously accessible?
+The thing that is being reenforced to me as I move through this project is the ease and accessibility of the technology and software needed to complete it. While Thomas Friedman might have proclaimed that the world is flat in his book a few years back, in no other place than information technology is this more evident and apparent. There is so much readily availble electronics, and open source software, anyone can have in their hands almost immediately the tools they need. Can you think of any other profession or hobby that is so instantaneously accessible?
 
 Case in point, for this project I needed a separate, stand-alone device to throw to the wolves. And, as previously documented, I am not interested in spending too much on this project. But I know I need something with a little power behind it, otherwise what's the point? Toward that end, I took this old computer that was in my basement, and designated it my DMZ device:
 
