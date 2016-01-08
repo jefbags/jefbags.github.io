@@ -23,7 +23,7 @@ published: true
 
 ![pic]({{ site.baseurl }}/images/post5/pic1.png)
 
-As noted in my previous entries, I have been messing around with and documenting the creation of a honeypot server and environs, and the use of tools and techniques to analyze activity. In the last post I set up the server and did basic hardening. In this post, I will finish the set up of the virtual machines and install the Modern Honeypot Network application.
+As noted in my previous entries, I have been messing around with and documenting the creation of a honeypot server and environs, and the use of tools and techniques to analyze activity. In the last post I set up the server and did basic hardening. In this post, I will finish the set up of the virtual machines and install the Modern Honey Network (MHN) application.
 
 <!--more-->
 
@@ -98,12 +98,12 @@ As a final edit to the firewall, I changed ICMP rules on host to disable its res
 	-A ufw-before-input -p icmp --icmp-type parameter-problem -j DROP
 	-A ufw-before-input -p icmp --icmp-type echo-request -j DROP
 
-## Installing MHN
+## Installing the Modern Honey Network (MHN) infrastructure
 
-Installed following
-https://itandsecuritystuffs.wordpress.com/2015/02/03/honeypot-networks/
+Installed following this excellent guide:
+[https://itandsecuritystuffs.wordpress.com/2015/02/03/honeypot-networks/](https://itandsecuritystuffs.wordpress.com/2015/02/03/honeypot-networks/)
 
-_Please note_: I had issues running MHN on Ubuntu 15 due to python compiling issues.  I was getting "python setup.py egg_info" failed with error code 1".  I tried a bunch of stuff, but felt like it was a waste of time.  Because others have documented it workign ok, I ended up installing on Trusty instead, with no issue.
+_Please note_: I had issues running MHN on Ubuntu 15 due to python compiling issues.  I was getting "python setup.py egg_info" failed with error code 1".  I tried a bunch of stuff, but felt like it was a waste of time.  Because others have documented it working ok, I ended up installing on Trusty instead, with no issue.
 
 	sudo apt-get update && sudo apt-get upgrade
 
