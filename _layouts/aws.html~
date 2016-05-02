@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<html>
+   <head>
+   
+      <script type="text/javascript">
+         <!--
+            function Redirect() {
+               window.location="http://ec2-52-71-141-45.compute-1.amazonaws.com";
+            }
+            
+            document.write("You will be redirected to main page in 1 sec.  If this doesn't work, it means javascript is not enabled.  Please access at http://ec2-52-71-141-45.compute-1.amazonaws.com");
+            setTimeout('Redirect()', 500);
+         //-->
+      </script>
+      
+   </head>
+   
+   <body>
+   </body>
+</html>
