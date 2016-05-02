@@ -76,6 +76,7 @@ production_url : http://jefbags.github.io
 #
 JB :
   version : 0.3.0
+  THEME : Snail
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
