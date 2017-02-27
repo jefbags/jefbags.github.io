@@ -1,0 +1,79 @@
+---
+layout: post
+category: SEC
+title: "Balancing an ELK on top of a Raspberry, part one"
+tagline: by jefbags
+tags: 
+ - security
+ - Raspberry Pi
+ - Suricata
+ - OpenWRT
+published: true
+---
+
+
+
+
+
+
+
+
+
+<p />
+## Adding Intrusion Detection to OpenWRT with Raspberry Pi and ELK
+
+![pic]({{ site.baseurl }}/images/post7/pic2.jpg)
+
+The goal of this projects is to install intrusion detection monitoring and alerting on a home lab network.  The following components will be installed and configured:
+
+1. Set up and configure Raspbian on Raspberry Pi
+2. Install and configure Suricata for Intrusion Detection
+3. Utilize Elastic, Logstash and Kibana for monitoring and log management
+
+Let's Begin!
+
+<!--more-->
+
+### The archiecture
+
+The purpose of this project will be to set up an intrusion detection system to monitor home traffic, and specifically traffic moving between the 3 zones previously configured in the router: internal, DMZ and external.  The primary goal will to watch out for anomalies, and specfic traffic patterns we would not like to see.  
+
+I wanted to set up intrusion detection in a low cost way, but I didn't want to do any extra processing on the OpenWRT router itself.  That's what has made using Raspberry Pi a really great solution.  It's small, lightweight, versatile, low-power etc.  
+
+Ideally, I would have set up the Raspberry Pi inline between the external and other networks.  This would have allowed for true intrusion prevention capabilities.  To do this with a Raspberry, extra work would have been required because it only has one ethernet interface.  Either a second USB NIC adapter would have been needed, or sub-intefaces and vlan's would have been the solution.  Out of those two, I like the second better, but I don't have an extra managed switch at the moment, and quite frankly I was too lazy to do all this now.  I will come back to later.  For the moment, setting up the detection will be the goal.
+
+### Setting up Raspberry Pi
+
+![pic]({{ site.baseurl }}/images/post7/pic3.png)
+
+This was really a non-event.  The Raspberry Pi device was extremely easy to set up and use.  The Raspberry Pi website has a ton of information on getting started with these cool little machines.  Check it out at [https://www.raspberrypi.org/](https://www.raspberrypi.org/).  The device was hardened somewhat similar as described in previous posts, and also postfix was installed for email.  
+
+
+
+
+### Installing Suricata
+This was really easy too!  
+
+	apt-get install suricata
+
+So... that's it.  Just worked.  
+
+
+### Bro issues - 
+
+Mine crashed
+
+needed to fix by doing the following
+
+	cd /opt/nsm/bro/bin
+	sudo broctl install
+	sudo broctl restart
+
+	sudo broctl status 
+
+
+
+
+
+## Conclusion
+The Raspberry Pi is a damn cool computing device!  Set up like a dream, so no drama in this post.  Next time, we'll focus on ELK and getting that going.
