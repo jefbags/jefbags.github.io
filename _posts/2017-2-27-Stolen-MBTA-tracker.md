@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 category: DEV
 title: "Messing around with stolen MBTA tracker"
 tagline: by jefbags
