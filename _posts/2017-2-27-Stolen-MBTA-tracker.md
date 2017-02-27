@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: post
 category: DEV
 title: "Messing around with stolen MBTA tracker"
 tagline: by jefbags
 tags: 
  - development
-published: true
+published: false
 pre_content: |
   <div style="margin: 0 20px;">
     <select id="option_list" style="margin: 10px 0;">
