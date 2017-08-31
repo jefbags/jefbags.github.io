@@ -20,7 +20,7 @@ published: true
 
 
 <p />
-# Adding Intrusion Detection to OpenWRT with Raspberry Pi and ELK
+## Adding Intrusion Detection to OpenWRT with Raspberry Pi and ELK
 
 ![pic]({{ site.baseurl }}/images/post7/pic2.jpg)
 
